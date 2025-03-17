@@ -5,17 +5,18 @@
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "style": "dist/shraga-ui.css", 
   "exports": {
-    "types": "./dist/index.d.ts",
+    "types": "./index.d.ts",
     "css": "./dist/shraga-ui.css",
     "import": "./dist/index.es.js",
     "require": "./dist/index.cjs.js"
   },
   "files": [
     "dist",
-    "src"
+    "src",
+    "index.d.ts"
   ],
   "scripts": {
     "dev": "vite",
