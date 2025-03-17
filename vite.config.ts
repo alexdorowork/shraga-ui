@@ -10,8 +10,8 @@ export default ({ mode } : { mode: string }) => {
       lib: {
         entry: path.resolve(__dirname, "src/index.ts"), // Entry point
         name: "ShragaUI", // Global variable name for UMD build
-        fileName: (format) => `shraga-ui.${format}.js`,
-        formats: ["es", "cjs", "umd"] // Build ESM, CommonJS, and UMD versions
+        fileName: (format) => `index.${format}.js`,
+        formats: ["es", "cjs"] // Build ESM, CommonJS
       },
       rollupOptions: {
         external: ["react", "react-dom"], // Prevent bundling React

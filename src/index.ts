@@ -6,4 +6,6 @@ import { createRoot } from "./CreateRoot.tsx";
 
 import "./globals.css";
 
+export type { ChatProps } from "./components/Chat";
 export { Chat, createRoot };
+

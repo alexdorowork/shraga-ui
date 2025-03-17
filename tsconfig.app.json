@@ -27,7 +27,7 @@
     "esModuleInterop": true,
     "declaration": true,  // Generate .d.ts files
     "declarationMap": true,
-    "emitDeclarationOnly": true, // Do not emit .js files
+    "emitDeclarationOnly": false, // Do not emit .js files
   },
   "include": ["src"]
 }

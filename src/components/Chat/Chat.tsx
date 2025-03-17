@@ -55,7 +55,9 @@ const getMarkers = (message: Message) : MapMarker[] => {
     }));
 }
 
-export default function Chat({ readOnly = false, chatData }: { readOnly?: boolean, chatData?: ChatType }) {
+export type ChatProps = { readOnly?: boolean, chatData?: ChatType };
+
+export default function Chat({ readOnly = false, chatData }: ChatProps) {
   const { configs, selectedChat, submitFeedback, chatUpdated, setChatUpdated } =
     useAppContext();
   const { theme, setChatBackground } = useThemeContext();
