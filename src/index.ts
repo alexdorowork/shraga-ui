@@ -1,11 +1,12 @@
 
 import "react-toastify/dist/ReactToastify.css";
 
-import { Chat } from "./components/index.ts";
+import { Chat } from "./components/index";
+import { createRoot } from "./CreateRoot";
 
 import "./globals.css";
 
-export type { ChatProps } from "./components/Chat";
-export { createRoot } from "./CreateRoot";
-export { Chat };
+import type { ChatProps } from "./components/Chat";
 
+export { Chat, createRoot };
+export type { ChatProps };
