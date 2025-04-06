@@ -21,9 +21,16 @@ jobs:
         with:
           node-version: '14'  # Set your Node.js version here
 
-      - name: Install dependencies
+      - name: Clean npm cache
+        run: npm cache clean --force
+
+      - name: Clean up node_modules and package-lock.json
         run: |
-          npm ci
+          rm -rf node_modules
+          rm -f package-lock.json
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Run semantic-release
         env:
