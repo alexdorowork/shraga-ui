@@ -8,14 +8,16 @@
     "access": "public"
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "version": "1.0.3",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "index.d.ts",
-  "style": "dist/shraga-ui.css", 
+  "style": "dist/shraga-ui.css",
   "exports": {
     "types": "./index.d.ts",
     "css": "./dist/shraga-ui.css",
@@ -63,6 +65,9 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-assertions": "^7.26.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
     "@types/crypto-js": "^4.2.2",
     "@types/google.maps": "^3.58.1",
     "@types/lodash": "^4.17.16",
@@ -79,6 +84,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "postcss": "^8.4.39",
+    "semantic-release": "^24.2.3",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.8.2",
     "vite": "^6.2.2"
