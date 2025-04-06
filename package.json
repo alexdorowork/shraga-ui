@@ -4,6 +4,9 @@
   "author": "BigData Boutique",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.3",
   "type": "module",
   "main": "dist/index.cjs.js",
