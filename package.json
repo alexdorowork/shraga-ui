@@ -1,5 +1,8 @@
 {
   "name": "shraga-ui",
+  "description": "The frontend package for the Shraga project, a framework for building RAG applications.",
+  "author": "BigData Boutique",
+  "license": "MIT",
   "private": false,
   "version": "1.0.3",
   "type": "module",
