@@ -316,11 +316,13 @@ export default function AppProvider({ children }: AppProviderProps) {
       if (!chat) return;
 
       const latestMessage = chat.messages[chat.messages.length - 1];
-      const res = await fetchWithTimeout("/api/flows/run/", {
+      const res = await fetchWithTimeout("/api/flows/run", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: getAuthCookie() ?? "",
+          redirect: 'follow',
+          credentials: 'include'
         },
         body: JSON.stringify({
           question: text,
